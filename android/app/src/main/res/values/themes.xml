@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Sena" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/sena_window_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Android 12+ always shows a system splash on cold start; this can't be switched off, only shaped.
+         Background matches the lock screen exactly and the icon is transparent, so no logo flashes — it just
+         looks like the lock screen was there from the first frame. -->
+    <style name="Theme.Sena.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/sena_window_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+        <item name="postSplashScreenTheme">@style/Theme.Sena</item>
+    </style>
+</resources>

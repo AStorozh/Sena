@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read   # the jobs only read the code: a compromised step can't push or touch releases
+
+jobs:
+  # Sena lives on macOS (its sandbox, PDFKit, the wake word): her tests run on a Mac too. On Linux the install itself broke —
+  # the wake word library needs a package that exists there only for older Pythons.
+  python:
+    runs-on: macos-latest
+    timeout-minutes: 30   # the suite takes a few minutes: a test hung on a real Chrome or a socket doesn't burn macOS hours
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Install programs
+        run: HOMEBREW_NO_AUTO_UPDATE=1 brew install ffmpeg
+      - name: Install dependencies   # each library below its next major (requirements.txt): a new major can't break a push by itself
+        run: pip install -r requirements.txt
+      - name: Run tests
+        run: python -m unittest
+
+  # the Mac app is built; its style rules are checked by tests/test_mac_style.py in the job above
+  mac:
+    runs-on: macos-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Sena.app
+        run: cd mac && ./build.sh
+
+  android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: Unit tests
+        run: cd android && ./gradlew :app:testDebugUnitTest
+      - name: Lint
+        run: cd android && ./gradlew :app:lintDebug

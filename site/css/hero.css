@@ -1,0 +1,55 @@
+/* The first screen (hero.js): the headline at the top left, the giant name at the bottom right, the text and buttons at the
+   bottom left — the agents fall onto the headline and onto the letters, at two different heights */
+.hero {
+  position: relative; overflow: hidden; min-height: max(100svh, 760px);
+  padding: 190px var(--side) 56px;   /* room above the headline for the agents that stand on it */
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto 1fr;
+  grid-template-areas: "top top" "side word"; column-gap: clamp(28px, 4vw, 72px);
+}
+.h-top { grid-area: top; position: relative; z-index: 2; max-width: 880px; }
+.h-kicker { display: flex; align-items: center; gap: 9px; margin: 0 0 18px; font: 500 12px var(--mono); color: var(--muted); letter-spacing: .03em; }
+.h-kicker i { width: 8px; height: 8px; border-radius: 50%; background: #3fb36b; animation: ping 2s infinite; }
+@keyframes ping { 0% { box-shadow: 0 0 0 0 #3fb36b88; } 70%, 100% { box-shadow: 0 0 0 9px #3fb36b00; } }
+.hero h1 { margin: 0; font: 650 clamp(32px, 3.7vw, 60px)/1.04 var(--sans); letter-spacing: -0.035em; text-wrap: balance; }
+.word { grid-area: word; align-self: end; justify-self: end; position: relative; z-index: 2; }
+.h-side { grid-area: side; align-self: end; position: relative; z-index: 2; max-width: 500px; padding-bottom: 1.2vw; }
+.h-side .lead { margin: 0; font-size: clamp(16px, 1.25vw, 18px); color: var(--muted); text-wrap: pretty; }
+.cta { display: flex; gap: 10px; margin-top: 22px; flex-wrap: wrap; }
+/* Sena's leaf above the name, its petals breathing one after another */
+.h-logo { position: absolute; z-index: 1; left: 50%; bottom: calc(100% + 130px); translate: -50% 0; width: clamp(200px, 21vw, 330px); }   /* above the agents standing on the letters */   /* centred over the name, out of the flow: it moves nothing */
+.h-logo svg { width: 100%; height: auto; display: block; overflow: visible; filter: drop-shadow(0 24px 30px #14131222); }
+.petal { fill: var(--ink); transform-box: view-box; transform-origin: 50% 55%; animation: petal 5s ease-in-out infinite; animation-delay: calc(var(--i) * -0.8s); }
+@keyframes petal { 50% { transform: scale(1.045) rotate(-1.5deg); } }
+.h-logo:hover .petal { animation-duration: 1.2s; }
+
+/* The live request and answer of the demo */
+.live-line { margin-top: 18px; padding: 10px 16px; border-radius: 18px; background: var(--sheet); border: 1px solid var(--line); box-shadow: 0 18px 36px -26px #3a2d1666; }   /* its own sheet: readable over the dots and the agents' lines */
+.now { display: flex; gap: 12px; align-items: baseline; margin: 0; padding: 4px 0; font-size: 15px; color: var(--ink); }
+.now + .now { border-top: 1px dashed var(--line); }
+.now-label { display: flex; align-items: center; gap: 5px; width: 72px; flex: none; font: 500 11px var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--faint); }
+.now-label .leaf { width: 13px; height: 11px; }
+.now-text { min-height: 3em; line-height: 1.5; }   /* room for two lines from the start: the block keeps its height and nothing above it jumps */
+.caret { display: inline-block; width: 2px; height: 1.1em; vertical-align: -0.2em; margin-left: 2px; background: var(--ink); animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+#replyText { opacity: 0; transition: opacity .5s; }
+#replyText.on { opacity: 1; }
+
+@media (max-width: 1000px) {
+  .hero { grid-template-columns: minmax(0, 1fr); grid-template-areas: "top" "word" "side";
+  }
+  .h-logo { display: none; }
+  .hero { grid-template-rows: auto; row-gap: 22px; padding-top: 150px; min-height: 0; }
+  .h-side { justify-self: start; }
+  /* the agents on the name are as tall as ~60 px: room for them under the headline, so they don't cover its last line */
+  .word { margin-top: 56px; }
+}
+@media (max-width: 700px) {
+  /* the agents standing on the headline and their tags sit below the menu island, not under it */
+  .hero { padding-top: 172px; }
+}
+@media (max-width: 560px) {
+  .hero { padding-bottom: 52px; }
+}
+/* the name on the first screen is the biggest thing on the page */
+.hero .giant { font-size: clamp(110px, 16vw, 290px); }
+@media (max-width: 1000px) { .hero .giant { font-size: 21vw; } }

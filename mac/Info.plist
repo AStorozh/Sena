@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleDevelopmentRegion</key><string>ru</string>
+  <key>CFBundleLocalizations</key><array><string>ru</string><string>en</string></array>
+  <key>CFBundleExecutable</key><string>Sena</string>
+  <key>CFBundleIdentifier</key><string>com.sena.desk</string>
+  <key>CFBundleName</key><string>Сена</string>
+  <key>CFBundleDisplayName</key><string>Сена</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleShortVersionString</key><string>2.0</string>
+  <key>CFBundleVersion</key><string>2</string>
+  <key>CFBundleIconFile</key><string>Sena</string>
+  <key>CFBundleIconName</key><string>AppIcon</string>
+  <key>LSMinimumSystemVersion</key><string>14.0</string>
+  <key>LSApplicationCategoryType</key><string>public.app-category.productivity</string>
+  <key>NSHighResolutionCapable</key><true/>
+  <key>NSPrincipalClass</key><string>NSApplication</string>
+  <key>NSHumanReadableCopyright</key><string>Сена — личный ассистент Артемия. © 2026 Artemii Storozhevskikh. Лицензия PolyForm Strict 1.0.0.</string>
+  <key>NSMicrophoneUsageDescription</key><string>Микрофон нужен для голосовых сообщений Сене и для живого голоса. Если на полке включено «Слушать голос с Mac», Сена слышит речь вокруг этого Mac: на «Сена, …» отвечает, а остальное расшифровывает и хранит для памяти.</string>
+  <key>NSDesktopFolderUsageDescription</key><string>Сена живёт в папке проекта на Рабочем столе: приложение читает её настройки и запускает её оттуда.</string>
+  <key>NSAppTransportSecurity</key><dict><key>NSAllowsLocalNetworking</key><true/></dict>
+</dict>
+</plist>

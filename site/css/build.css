@@ -1,0 +1,34 @@
+[data-build] { opacity: 0; }   /* hidden until build.js draws it in */
+
+/* The self-building page (build.js): the agents' cursors, frames with sizes, guides, the layer counter */
+.build-layer { position: absolute; left: 0; top: 0; width: 100%; height: 0; z-index: 60; pointer-events: none; overflow-x: clip; }   /* cursors fly in from past the edge: on a phone they must not widen the page (it would zoom out) */
+.b-cursor { position: absolute; left: 0; top: 0; display: flex; align-items: flex-start; will-change: transform; }
+.b-cursor svg { width: 22px; height: 22px; margin: -3px 0 0 -3px; filter: drop-shadow(0 2px 3px #0003); }
+.b-cursor span { margin: 16px 0 0 -4px; padding: 2px 7px; border-radius: 6px; font: 500 11px var(--mono); color: #fff; white-space: nowrap; }
+.b-cursor.small svg { width: 16px; height: 16px; opacity: .8; }
+.b-sel { position: absolute; left: 0; top: 0; border: 1.5px solid #2f6bff; }
+.b-sel i { position: absolute; width: 7px; height: 7px; background: #fff; border: 1.5px solid #2f6bff; }
+.b-sel i:nth-child(1) { left: -4px; top: -4px; } .b-sel i:nth-child(2) { right: -4px; top: -4px; }
+.b-sel i:nth-child(3) { left: -4px; bottom: -4px; } .b-sel i:nth-child(4) { right: -4px; bottom: -4px; }
+.b-size { position: absolute; left: 0; top: 0; padding: 2px 6px; border-radius: 4px; background: #2f6bff; color: #fff; font: 500 10px var(--mono); white-space: nowrap; }
+.b-caret { position: absolute; left: 0; top: 0; width: 2px; background: #2f6bff; }
+.b-cross { position: absolute; left: -9px; top: -9px; width: 18px; height: 18px; }
+.b-cross::before, .b-cross::after { content: ""; position: absolute; background: #8a8378; }
+.b-cross::before { left: 8px; top: 0; width: 1.5px; height: 18px; } .b-cross::after { top: 8px; left: 0; height: 1.5px; width: 18px; }
+.b-guide { position: absolute; animation: guide .35s var(--ease-out); }
+.b-guide.v { top: 0; width: 1px; height: 100vh; background: #ff4d3d; transform-origin: top; }
+.b-guide.h { left: 0; height: 1px; width: 100%; background: #2f6bff66; transform-origin: left; }
+@keyframes guide { from { transform: scale(0); } }
+.b-hud {
+  position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 4px; padding: 9px 16px; border-radius: 999px;
+  background: var(--ink); color: #fffcf6b3; font: 500 12px var(--mono); white-space: nowrap;
+  box-shadow: 0 14px 30px -14px #000a; animation: hud .5s var(--ease-out);
+}
+.b-hud b { color: var(--sheet); font-weight: 500; }
+.b-dots { display: flex; margin-right: 8px; }
+.b-dots i { width: 10px; height: 10px; border-radius: 50%; margin-left: -3px; border: 1.5px solid var(--ink); }
+.b-sep { width: 1px; height: 12px; background: #ffffff33; margin: 0 10px; }
+.b-state { color: var(--leaf); }
+@keyframes hud { from { opacity: 0; transform: translate(-50%, 12px); } }
+@media (max-width: 560px) { .b-hud .b-state, .b-hud .b-sep:last-of-type { display: none; } }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Starts Sena when the owner logs in, and brings run.sh back if run.sh itself fell (the core it restarts on its own).
+     Install (from the project folder): sed "s|__SENA_DIR__|$PWD|g" tools/launchd/com.sena.agent.plist > ~/Library/LaunchAgents/com.sena.agent.plist && launchctl load ~/Library/LaunchAgents/com.sena.agent.plist
+     Stop: launchctl unload ~/Library/LaunchAgents/com.sena.agent.plist
+     KeepAlive only after a failure: run.sh exits with 0 when Sena was stopped from the app (the screen it leaves exits when she is
+     started there again, and a new run.sh leads her from then on), when a start can't work, and when another run.sh already
+     runs — launchd never raises a second one on top.
+     launchd.log gets only run.sh's own errors: Sena's output goes to logs/bot.log in her data folder. -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.sena.agent</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>__SENA_DIR__/run.sh</string>
+  </array>
+  <key>WorkingDirectory</key><string>__SENA_DIR__</string>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key>
+  <dict>
+    <key>SuccessfulExit</key><false/>
+  </dict>
+  <key>StandardOutPath</key><string>__SENA_DIR__/data/logs/launchd.log</string>
+  <key>StandardErrorPath</key><string>__SENA_DIR__/data/logs/launchd.log</string>
+</dict>
+</plist>

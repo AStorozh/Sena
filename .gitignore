@@ -1,0 +1,43 @@
+# secrets and personal data: keys, the Telegram session, memory, the conversation, the browser profile
+.env
+/data/
+
+# heavy models (how to get them: README.md, "Quick start": python -m sena.home setup), the name detector
+# models/sena.onnx too: it is not published (train it with tools/wakeword); the private repo keeps it tracked
+models/*
+
+# Python
+__pycache__/
+*.pyc
+
+# the Android app's build (except the ready sena.apk and the signing key)
+android/.gradle/
+android/.kotlin/
+android/build/
+android/app/build/
+android/local.properties
+android/dist/
+android/*.idsig
+
+# training the name detector: data and intermediate files
+tools/wakeword/clips/
+tools/wakeword/data/
+tools/wakeword/features/
+tools/wakeword/voices/
+tools/wakeword/eval/
+tools/wakeword/piper-sample-generator/
+
+.DS_Store
+
+# the Mac app's build (made by mac/build.sh)
+mac/build/
+mac/Sena.app/
+
+# the model bench: a copy of the memory for the runs (personal data), the runs and their results, the generated reports
+tools/model_bench/world/
+tools/model_bench/runs/
+tools/model_bench/results/
+tools/model_bench/report.html
+tools/model_bench/report-*.html
+tools/model_bench/shot-*.png
+/dist/

@@ -1,0 +1,42 @@
+/* The agents' playground (world.js): the dot field, the bodies and their tags, the grab hint, giant words to stand on */
+.field { position: absolute; inset: 0; width: 100%; height: 100%; }
+.stage { position: absolute; inset: 0; pointer-events: none; z-index: 5; }
+
+/* A giant word ([data-text], split into letters by world.js): the agents stand on its letters */
+.giant {
+  display: block; margin-left: -.04em;
+  font: 800 clamp(96px, 12.5vw, 210px)/0.86 var(--display); letter-spacing: -0.055em;
+  white-space: nowrap; user-select: none;
+}
+.ch { display: inline-block; }
+
+.hint {
+  position: absolute; z-index: 2; right: var(--side); top: 84px; margin: 0;
+  display: flex; align-items: center; gap: 8px; font: 500 12px var(--mono); color: var(--muted);
+  transition: opacity .6s;
+}
+.hint.gone { opacity: 0; }
+.hand { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; animation: wave 2.4s ease-in-out infinite; transform-origin: 50% 90%; }
+@keyframes wave { 0%, 60%, 100% { transform: none; } 70% { transform: rotate(-14deg); } 80% { transform: rotate(10deg); } 90% { transform: rotate(-6deg); } }
+
+/* Characters: bodies moved by the physics in world.js; the canvas gets its CSS size from there */
+.body { position: absolute; left: 0; top: 0; pointer-events: auto; touch-action: none; cursor: grab; will-change: transform; }
+.body.held { cursor: grabbing; }
+.tag {
+  position: absolute; left: 0; top: 0; pointer-events: none; white-space: nowrap;
+  font: 500 12px var(--mono); background: var(--ink); color: var(--sheet);
+  padding: 5px 10px; border-radius: 999px; opacity: 0; will-change: transform;
+  transition: opacity .3s;
+}
+.tag::after {
+  content: ""; position: absolute; left: var(--ax, 50%); bottom: -4px; width: 8px; height: 8px;
+  background: inherit; transform: translateX(-50%) rotate(45deg); border-radius: 1px;
+}
+.tag.on { opacity: 1; }
+
+@media (max-width: 900px) {
+  .hint { top: auto; bottom: 8px; right: 50%; transform: translateX(50%); white-space: nowrap; }
+}
+@media (max-width: 560px) {
+  .giant { font-size: 30vw; }
+}

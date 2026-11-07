@@ -1,0 +1,5 @@
+"CFBundleName" = "Sena";
+"CFBundleDisplayName" = "Sena";
+"NSHumanReadableCopyright" = "Sena — Artemii's personal assistant. © 2026 Artemii Storozhevskikh. License: PolyForm Strict 1.0.0.";
+"NSMicrophoneUsageDescription" = "The microphone is needed for voice messages to Sena and for the live voice. When «Listen on this Mac» is on in the shelf, Sena hears speech around this Mac: she answers «Sena, …», and transcribes and keeps the rest for her memory.";
+"NSDesktopFolderUsageDescription" = "Sena lives in the project folder on the Desktop: the app reads its settings and launches it from there.";

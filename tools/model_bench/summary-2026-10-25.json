@@ -1,0 +1,1106 @@
+{
+ "brain": {
+  "gpt-6-astra": {
+   "n": 57,
+   "passed": 52,
+   "rate": 91,
+   "usd_each": 0.07835,
+   "sec_median": 9.25,
+   "sec_p90": 17.7,
+   "calls_each": 0.0,
+   "failed": [
+    "message-mom",
+    "mail-trash-all",
+    "browser-avito",
+    "news-read",
+    "goal-progress"
+   ]
+  },
+  "claude-fable-5-1": {
+   "n": 57,
+   "passed": 55,
+   "rate": 96,
+   "usd_each": 0.04087,
+   "sec_median": 4.95,
+   "sec_p90": 10.4,
+   "calls_each": 0.0,
+   "failed": [
+    "browser-avito",
+    "news-watch"
+   ]
+  },
+  "claude-haiku-5-5": {
+   "n": 57,
+   "passed": 49,
+   "rate": 86,
+   "usd_each": 0.00082,
+   "sec_median": 4.0,
+   "sec_p90": 7.0,
+   "calls_each": 0.0,
+   "failed": [
+    "secret-reveal",
+    "moscow-time",
+    "news-watch",
+    "coffee",
+    "shorter",
+    "costs",
+    "quality",
+    "goal-progress"
+   ]
+  },
+  "claude-opus-5-5": {
+   "n": 57,
+   "passed": 56,
+   "rate": 98,
+   "usd_each": 0.02262,
+   "sec_median": 5.8,
+   "sec_p90": 10.0,
+   "calls_each": 0.0,
+   "failed": [
+    "goal-new"
+   ]
+  },
+  "claude-sonnet-5-5": {
+   "n": 57,
+   "passed": 53,
+   "rate": 93,
+   "usd_each": 0.01445,
+   "sec_median": 4.0,
+   "sec_p90": 6.8,
+   "calls_each": 0.0,
+   "failed": [
+    "message-mom",
+    "news-read",
+    "deeper",
+    "goal-progress"
+   ]
+  },
+  "gpt-5.4-mini": {
+   "n": 57,
+   "passed": 38,
+   "rate": 67,
+   "usd_each": 0.00649,
+   "sec_median": 4.4,
+   "sec_p90": 7.8,
+   "calls_each": 0.0,
+   "failed": [
+    "message-mom",
+    "message-no-shortcut",
+    "read-igor",
+    "projects",
+    "usd-vnd",
+    "moscow-time",
+    "news",
+    "news-sport",
+    "news-local",
+    "news-read",
+    "news-watch",
+    "flights",
+    "btc-alert",
+    "costs",
+    "quality",
+    "checkup-part",
+    "todo",
+    "goal-new",
+    "goal-progress"
+   ]
+  },
+  "gpt-6-luna": {
+   "n": 57,
+   "passed": 48,
+   "rate": 84,
+   "usd_each": 0.00177,
+   "sec_median": 6.8,
+   "sec_p90": 19.1,
+   "calls_each": 0.0,
+   "failed": [
+    "message-mom",
+    "message-no-shortcut",
+    "read-igor",
+    "moscow-time",
+    "news",
+    "news-local",
+    "news-read",
+    "costs",
+    "goal-progress"
+   ]
+  },
+  "gpt-6.1-sol": {
+   "n": 57,
+   "passed": 53,
+   "rate": 93,
+   "usd_each": 0.01303,
+   "sec_median": 8.3,
+   "sec_p90": 16.3,
+   "calls_each": 0.0,
+   "failed": [
+    "message-mom",
+    "mail-trash-all",
+    "news-read",
+    "goal-progress"
+   ]
+  }
+ },
+ "voice_commands": {
+  "gpt-6-astra": {
+   "n": 16,
+   "passed": 14,
+   "rate": 88,
+   "usd_each": 0.05034,
+   "sec_median": 7.2,
+   "sec_p90": 15.5,
+   "calls_each": 0.0,
+   "failed": [
+    "message-mom",
+    "btc"
+   ]
+  },
+  "claude-fable-5-1": {
+   "n": 16,
+   "passed": 16,
+   "rate": 100,
+   "usd_each": 0.03462,
+   "sec_median": 3.75,
+   "sec_p90": 9.6,
+   "calls_each": 0.0,
+   "failed": []
+  },
+  "claude-haiku-5-5": {
+   "n": 16,
+   "passed": 13,
+   "rate": 81,
+   "usd_each": 0.00068,
+   "sec_median": 2.75,
+   "sec_p90": 5.6,
+   "calls_each": 0.0,
+   "failed": [
+    "message-mom",
+    "moscow-time",
+    "shorter"
+   ]
+  },
+  "claude-opus-5-5": {
+   "n": 16,
+   "passed": 15,
+   "rate": 94,
+   "usd_each": 0.01891,
+   "sec_median": 4.15,
+   "sec_p90": 7.8,
+   "calls_each": 0.0,
+   "failed": [
+    "message-mom"
+   ]
+  },
+  "claude-sonnet-5-5": {
+   "n": 16,
+   "passed": 15,
+   "rate": 94,
+   "usd_each": 0.01301,
+   "sec_median": 3.7,
+   "sec_p90": 6.3,
+   "calls_each": 0.0,
+   "failed": [
+    "message-mom"
+   ]
+  },
+  "gpt-5.4-mini": {
+   "n": 16,
+   "passed": 8,
+   "rate": 50,
+   "usd_each": 0.00877,
+   "sec_median": 3.4,
+   "sec_p90": 6.2,
+   "calls_each": 0.0,
+   "failed": [
+    "remind-call",
+    "message-mom",
+    "weather",
+    "btc",
+    "usd-vnd",
+    "news",
+    "todo",
+    "idea"
+   ]
+  },
+  "gpt-6-luna": {
+   "n": 16,
+   "passed": 14,
+   "rate": 88,
+   "usd_each": 0.00079,
+   "sec_median": 4.5,
+   "sec_p90": 8.9,
+   "calls_each": 0.0,
+   "failed": [
+    "message-mom",
+    "moscow-time"
+   ]
+  },
+  "gpt-6.1-sol": {
+   "n": 16,
+   "passed": 14,
+   "rate": 88,
+   "usd_each": 0.00886,
+   "sec_median": 6.4,
+   "sec_p90": 15.1,
+   "calls_each": 0.0,
+   "failed": [
+    "message-mom",
+    "btc"
+   ]
+  }
+ },
+ "web": {
+  "gpt-6-astra": {
+   "n": 18,
+   "passed": 18,
+   "rate": 100,
+   "usd_each": 0.058,
+   "sec_median": 14.5,
+   "sec_p90": 32.7,
+   "calls_each": 4.8,
+   "asked_each": 0.33,
+   "failed": {}
+  },
+  "claude-fable-5-1": {
+   "n": 18,
+   "passed": 18,
+   "rate": 100,
+   "usd_each": 0.07921,
+   "sec_median": 14.7,
+   "sec_p90": 26.5,
+   "calls_each": 3.7,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "claude-haiku-5-5": {
+   "n": 18,
+   "passed": 18,
+   "rate": 100,
+   "usd_each": 0.00117,
+   "sec_median": 9.45,
+   "sec_p90": 18.8,
+   "calls_each": 4.4,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "claude-opus-5-5": {
+   "n": 18,
+   "passed": 18,
+   "rate": 100,
+   "usd_each": 0.03222,
+   "sec_median": 14.1,
+   "sec_p90": 20.4,
+   "calls_each": 3.6,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "claude-sonnet-5-5": {
+   "n": 18,
+   "passed": 18,
+   "rate": 100,
+   "usd_each": 0.01608,
+   "sec_median": 11.3,
+   "sec_p90": 14.8,
+   "calls_each": 3.7,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "gpt-5.4-mini": {
+   "n": 18,
+   "passed": 18,
+   "rate": 100,
+   "usd_each": 0.01144,
+   "sec_median": 17.85,
+   "sec_p90": 32.7,
+   "calls_each": 7.4,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "gpt-6-luna": {
+   "n": 18,
+   "passed": 18,
+   "rate": 100,
+   "usd_each": 0.00078,
+   "sec_median": 16.15,
+   "sec_p90": 35.8,
+   "calls_each": 5.6,
+   "asked_each": 0.06,
+   "failed": {}
+  },
+  "gpt-6.1-sol": {
+   "n": 18,
+   "passed": 18,
+   "rate": 100,
+   "usd_each": 0.00991,
+   "sec_median": 13.7,
+   "sec_p90": 24.5,
+   "calls_each": 4.7,
+   "asked_each": 0.28,
+   "failed": {}
+  }
+ },
+ "mac": {
+  "gpt-6-astra": {
+   "n": 16,
+   "passed": 16,
+   "rate": 100,
+   "usd_each": 0.0657,
+   "sec_median": 16.1,
+   "sec_p90": 23.5,
+   "calls_each": 3.8,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "claude-fable-5-1": {
+   "n": 16,
+   "passed": 16,
+   "rate": 100,
+   "usd_each": 0.05912,
+   "sec_median": 11.2,
+   "sec_p90": 19.7,
+   "calls_each": 2.9,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "claude-haiku-5-5": {
+   "n": 16,
+   "passed": 16,
+   "rate": 100,
+   "usd_each": 0.00092,
+   "sec_median": 6.4,
+   "sec_p90": 15.1,
+   "calls_each": 3.2,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "claude-opus-5-5": {
+   "n": 16,
+   "passed": 16,
+   "rate": 100,
+   "usd_each": 0.02827,
+   "sec_median": 11.15,
+   "sec_p90": 18.8,
+   "calls_each": 3.1,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "claude-sonnet-5-5": {
+   "n": 16,
+   "passed": 16,
+   "rate": 100,
+   "usd_each": 0.01332,
+   "sec_median": 8.3,
+   "sec_p90": 9.9,
+   "calls_each": 3.1,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "gpt-5.4-mini": {
+   "n": 16,
+   "passed": 16,
+   "rate": 100,
+   "usd_each": 0.00813,
+   "sec_median": 9.45,
+   "sec_p90": 14.1,
+   "calls_each": 4.8,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "gpt-6-luna": {
+   "n": 16,
+   "passed": 16,
+   "rate": 100,
+   "usd_each": 0.00088,
+   "sec_median": 18.55,
+   "sec_p90": 23.3,
+   "calls_each": 4.2,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "gpt-6.1-sol": {
+   "n": 16,
+   "passed": 16,
+   "rate": 100,
+   "usd_each": 0.01254,
+   "sec_median": 17.7,
+   "sec_p90": 24.1,
+   "calls_each": 3.7,
+   "asked_each": 0.0,
+   "failed": {}
+  }
+ },
+ "hardweb": {
+  "claude-fable-5-1": {
+   "n": 4,
+   "passed": 4,
+   "rate": 100,
+   "usd_each": 0.10347,
+   "sec_median": 17.45,
+   "sec_p90": 26.0,
+   "calls_each": 5.2,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "claude-haiku-5-5": {
+   "n": 8,
+   "passed": 8,
+   "rate": 100,
+   "usd_each": 0.00174,
+   "sec_median": 14.1,
+   "sec_p90": 28.4,
+   "calls_each": 7.5,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "claude-opus-5-5": {
+   "n": 8,
+   "passed": 8,
+   "rate": 100,
+   "usd_each": 0.04112,
+   "sec_median": 18.9,
+   "sec_p90": 25.2,
+   "calls_each": 5.1,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "claude-sonnet-5-5": {
+   "n": 8,
+   "passed": 8,
+   "rate": 100,
+   "usd_each": 0.02475,
+   "sec_median": 14.3,
+   "sec_p90": 31.3,
+   "calls_each": 5.9,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "gpt-5.4-mini": {
+   "n": 8,
+   "passed": 8,
+   "rate": 100,
+   "usd_each": 0.02221,
+   "sec_median": 38.15,
+   "sec_p90": 68.2,
+   "calls_each": 13.2,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "gpt-6-astra": {
+   "n": 4,
+   "passed": 4,
+   "rate": 100,
+   "usd_each": 0.06466,
+   "sec_median": 16.25,
+   "sec_p90": 37.4,
+   "calls_each": 5.5,
+   "asked_each": 0.5,
+   "failed": {}
+  },
+  "gpt-6-luna": {
+   "n": 8,
+   "passed": 8,
+   "rate": 100,
+   "usd_each": 0.00108,
+   "sec_median": 18.35,
+   "sec_p90": 32.0,
+   "calls_each": 7.5,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "gpt-6.1-sol": {
+   "n": 8,
+   "passed": 8,
+   "rate": 100,
+   "usd_each": 0.01229,
+   "sec_median": 15.65,
+   "sec_p90": 30.3,
+   "calls_each": 5.9,
+   "asked_each": 0.5,
+   "failed": {}
+  }
+ },
+ "hardmac": {
+  "claude-fable-5-1": {
+   "n": 3,
+   "passed": 3,
+   "rate": 100,
+   "usd_each": 0.11186,
+   "sec_median": 13.5,
+   "sec_p90": 29.2,
+   "calls_each": 4.7,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "claude-haiku-5-5": {
+   "n": 6,
+   "passed": 6,
+   "rate": 100,
+   "usd_each": 0.00152,
+   "sec_median": 11.6,
+   "sec_p90": 18.8,
+   "calls_each": 4.8,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "claude-opus-5-5": {
+   "n": 6,
+   "passed": 6,
+   "rate": 100,
+   "usd_each": 0.04902,
+   "sec_median": 18.85,
+   "sec_p90": 21.0,
+   "calls_each": 4.7,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "claude-sonnet-5-5": {
+   "n": 6,
+   "passed": 6,
+   "rate": 100,
+   "usd_each": 0.02206,
+   "sec_median": 11.45,
+   "sec_p90": 17.2,
+   "calls_each": 4.5,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "gpt-5.4-mini": {
+   "n": 6,
+   "passed": 6,
+   "rate": 100,
+   "usd_each": 0.00929,
+   "sec_median": 10.45,
+   "sec_p90": 18.0,
+   "calls_each": 5.8,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "gpt-6-astra": {
+   "n": 3,
+   "passed": 3,
+   "rate": 100,
+   "usd_each": 0.07924,
+   "sec_median": 18.4,
+   "sec_p90": 24.4,
+   "calls_each": 4.7,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "gpt-6-luna": {
+   "n": 6,
+   "passed": 6,
+   "rate": 100,
+   "usd_each": 0.00134,
+   "sec_median": 20.25,
+   "sec_p90": 34.8,
+   "calls_each": 5.7,
+   "asked_each": 0.0,
+   "failed": {}
+  },
+  "gpt-6.1-sol": {
+   "n": 6,
+   "passed": 6,
+   "rate": 100,
+   "usd_each": 0.01553,
+   "sec_median": 19.65,
+   "sec_p90": 24.1,
+   "calls_each": 4.2,
+   "asked_each": 0.0,
+   "failed": {}
+  }
+ },
+ "judge": {
+  "gpt-6-astra": {
+   "n": 16,
+   "passed": 12,
+   "rate": 75,
+   "usd_each": 0.01565,
+   "sec_median": 7.75,
+   "sec_p90": 10.2,
+   "calls_each": 2.5,
+   "verdict_rate": 75,
+   "lesson_rate": 100,
+   "safe_rate": 100
+  },
+  "claude-fable-5-1": {
+   "n": 16,
+   "passed": 16,
+   "rate": 100,
+   "usd_each": 0.042,
+   "sec_median": 7.6,
+   "sec_p90": 13.5,
+   "calls_each": 2.3,
+   "verdict_rate": 100,
+   "lesson_rate": 100,
+   "safe_rate": 100
+  },
+  "claude-haiku-5-5": {
+   "n": 16,
+   "passed": 16,
+   "rate": 100,
+   "usd_each": 0.00064,
+   "sec_median": 5.75,
+   "sec_p90": 7.1,
+   "calls_each": 2.2,
+   "verdict_rate": 100,
+   "lesson_rate": 100,
+   "safe_rate": 100
+  },
+  "claude-opus-5-5": {
+   "n": 16,
+   "passed": 16,
+   "rate": 100,
+   "usd_each": 0.01767,
+   "sec_median": 8.95,
+   "sec_p90": 11.8,
+   "calls_each": 2.4,
+   "verdict_rate": 100,
+   "lesson_rate": 100,
+   "safe_rate": 100
+  },
+  "claude-sonnet-5-5": {
+   "n": 16,
+   "passed": 16,
+   "rate": 100,
+   "usd_each": 0.00748,
+   "sec_median": 4.4,
+   "sec_p90": 7.6,
+   "calls_each": 2.2,
+   "verdict_rate": 100,
+   "lesson_rate": 100,
+   "safe_rate": 100
+  },
+  "gpt-5.4-mini": {
+   "n": 16,
+   "passed": 13,
+   "rate": 81,
+   "usd_each": 0.00306,
+   "sec_median": 4.85,
+   "sec_p90": 8.1,
+   "calls_each": 2.9,
+   "verdict_rate": 100,
+   "lesson_rate": 70,
+   "safe_rate": 100
+  },
+  "gpt-6-luna": {
+   "n": 16,
+   "passed": 8,
+   "rate": 50,
+   "usd_each": 0.00015,
+   "sec_median": 6.2,
+   "sec_p90": 14.2,
+   "calls_each": 2.5,
+   "verdict_rate": 94,
+   "lesson_rate": 20,
+   "safe_rate": 100
+  },
+  "gpt-6.1-sol": {
+   "n": 16,
+   "passed": 14,
+   "rate": 88,
+   "usd_each": 0.00326,
+   "sec_median": 6.95,
+   "sec_p90": 12.9,
+   "calls_each": 2.6,
+   "verdict_rate": 88,
+   "lesson_rate": 100,
+   "safe_rate": 100
+  }
+ },
+ "narrow": {
+  "gpt-6-astra": {
+   "rules": {
+    "n": 24,
+    "passed": 24,
+    "rate": 100,
+    "usd_each": 0.00687,
+    "sec_median": 2.6,
+    "sec_p90": 3.2,
+    "calls_each": 1.0
+   },
+   "router": {
+    "n": 18,
+    "passed": 18,
+    "rate": 100,
+    "usd_each": 0.00561,
+    "sec_median": 2.4,
+    "sec_p90": 5.2,
+    "calls_each": 1.0
+   },
+   "compact": {
+    "n": 6,
+    "passed": 6,
+    "rate": 100,
+    "usd_each": 0.00929,
+    "sec_median": 2.9,
+    "sec_p90": 3.3,
+    "calls_each": 1.0,
+    "facts_kept": 100,
+    "words_median": 51.5
+   }
+  },
+  "claude-fable-5-1": {
+   "rules": {
+    "n": 24,
+    "passed": 24,
+    "rate": 100,
+    "usd_each": 0.00498,
+    "sec_median": 2.0,
+    "sec_p90": 4.8,
+    "calls_each": 1.0
+   },
+   "router": {
+    "n": 18,
+    "passed": 18,
+    "rate": 100,
+    "usd_each": 0.00575,
+    "sec_median": 1.6,
+    "sec_p90": 4.6,
+    "calls_each": 1.0
+   },
+   "compact": {
+    "n": 6,
+    "passed": 6,
+    "rate": 100,
+    "usd_each": 0.01424,
+    "sec_median": 3.15,
+    "sec_p90": 10.1,
+    "calls_each": 1.0,
+    "facts_kept": 100,
+    "words_median": 54.0
+   }
+  },
+  "claude-haiku-5-5": {
+   "rules": {
+    "n": 24,
+    "passed": 22,
+    "rate": 92,
+    "usd_each": 7e-05,
+    "sec_median": 1.6,
+    "sec_p90": 2.3,
+    "calls_each": 1.0
+   },
+   "router": {
+    "n": 18,
+    "passed": 18,
+    "rate": 100,
+    "usd_each": 7e-05,
+    "sec_median": 0.95,
+    "sec_p90": 1.3,
+    "calls_each": 1.0
+   },
+   "compact": {
+    "n": 6,
+    "passed": 6,
+    "rate": 100,
+    "usd_each": 0.00016,
+    "sec_median": 1.9,
+    "sec_p90": 2.3,
+    "calls_each": 1.0,
+    "facts_kept": 100,
+    "words_median": 63.5
+   }
+  },
+  "claude-opus-5-5": {
+   "rules": {
+    "n": 24,
+    "passed": 24,
+    "rate": 100,
+    "usd_each": 0.00201,
+    "sec_median": 2.95,
+    "sec_p90": 5.7,
+    "calls_each": 1.0
+   },
+   "router": {
+    "n": 18,
+    "passed": 18,
+    "rate": 100,
+    "usd_each": 0.00255,
+    "sec_median": 1.8,
+    "sec_p90": 4.8,
+    "calls_each": 1.0
+   },
+   "compact": {
+    "n": 6,
+    "passed": 6,
+    "rate": 100,
+    "usd_each": 0.00636,
+    "sec_median": 3.0,
+    "sec_p90": 3.9,
+    "calls_each": 1.0,
+    "facts_kept": 100,
+    "words_median": 63.0
+   }
+  },
+  "claude-sonnet-5-5": {
+   "rules": {
+    "n": 24,
+    "passed": 24,
+    "rate": 100,
+    "usd_each": 0.00138,
+    "sec_median": 2.45,
+    "sec_p90": 4.9,
+    "calls_each": 1.0
+   },
+   "router": {
+    "n": 18,
+    "passed": 18,
+    "rate": 100,
+    "usd_each": 0.0012,
+    "sec_median": 1.15,
+    "sec_p90": 1.4,
+    "calls_each": 1.0
+   },
+   "compact": {
+    "n": 6,
+    "passed": 6,
+    "rate": 100,
+    "usd_each": 0.00317,
+    "sec_median": 2.4,
+    "sec_p90": 2.8,
+    "calls_each": 1.0,
+    "facts_kept": 100,
+    "words_median": 64.0
+   }
+  },
+  "gpt-5.4-mini": {
+   "rules": {
+    "n": 24,
+    "passed": 24,
+    "rate": 100,
+    "usd_each": 0.0009,
+    "sec_median": 1.65,
+    "sec_p90": 2.9,
+    "calls_each": 1.0
+   },
+   "router": {
+    "n": 18,
+    "passed": 14,
+    "rate": 78,
+    "usd_each": 0.00044,
+    "sec_median": 1.0,
+    "sec_p90": 1.1,
+    "calls_each": 1.0
+   },
+   "compact": {
+    "n": 6,
+    "passed": 4,
+    "rate": 67,
+    "usd_each": 0.00083,
+    "sec_median": 1.75,
+    "sec_p90": 2.0,
+    "calls_each": 1.0,
+    "facts_kept": 95,
+    "words_median": 46.0
+   }
+  },
+  "gpt-6-luna": {
+   "rules": {
+    "n": 24,
+    "passed": 23,
+    "rate": 96,
+    "usd_each": 8e-05,
+    "sec_median": 1.7,
+    "sec_p90": 2.2,
+    "calls_each": 1.0
+   },
+   "router": {
+    "n": 18,
+    "passed": 16,
+    "rate": 89,
+    "usd_each": 6e-05,
+    "sec_median": 1.4,
+    "sec_p90": 2.2,
+    "calls_each": 1.0
+   },
+   "compact": {
+    "n": 6,
+    "passed": 4,
+    "rate": 67,
+    "usd_each": 0.00012,
+    "sec_median": 2.9,
+    "sec_p90": 3.2,
+    "calls_each": 1.0,
+    "facts_kept": 95,
+    "words_median": 39.5
+   }
+  },
+  "gpt-6.1-sol": {
+   "rules": {
+    "n": 24,
+    "passed": 24,
+    "rate": 100,
+    "usd_each": 0.00142,
+    "sec_median": 2.55,
+    "sec_p90": 3.1,
+    "calls_each": 1.0
+   },
+   "router": {
+    "n": 18,
+    "passed": 18,
+    "rate": 100,
+    "usd_each": 0.00112,
+    "sec_median": 2.2,
+    "sec_p90": 2.7,
+    "calls_each": 1.0
+   },
+   "compact": {
+    "n": 6,
+    "passed": 6,
+    "rate": 100,
+    "usd_each": 0.00183,
+    "sec_median": 2.85,
+    "sec_p90": 3.1,
+    "calls_each": 1.0,
+    "facts_kept": 100,
+    "words_median": 49.5
+   }
+  }
+ },
+ "voice": {
+  "hearing": {
+   "OpenAI gpt-transcribe": {
+    "wer": 8.9,
+    "wer_Ирина": 13.5,
+    "wer_Милена": 3.4,
+    "wer_Ирина с шумом": 9.7,
+    "sec_median": 0.83,
+    "errors": 0
+   },
+   "OpenAI gpt-4o-transcribe": {
+    "wer": 5.5,
+    "wer_Ирина": 5.6,
+    "wer_Милена": 1.2,
+    "wer_Ирина с шумом": 9.8,
+    "sec_median": 0.83,
+    "errors": 0
+   },
+   "OpenAI gpt-4o-mini-transcribe": {
+    "wer": 13.8,
+    "wer_Ирина": 18.8,
+    "wer_Милена": 1.2,
+    "wer_Ирина с шумом": 21.5,
+    "sec_median": 0.65,
+    "errors": 0
+   },
+   "Gemini 3.5 Transcribe": {
+    "wer": 3.8,
+    "wer_Ирина": 3.8,
+    "wer_Милена": 1.2,
+    "wer_Ирина с шумом": 6.4,
+    "sec_median": 3.68,
+    "errors": 0
+   },
+   "Дома: whisper large-v3-turbo": {
+    "wer": 8.5,
+    "wer_Ирина": 11.4,
+    "wer_Милена": 3.6,
+    "wer_Ирина с шумом": 10.6,
+    "sec_median": 3.42,
+    "errors": 0
+   },
+   "Дома: whisper small": {
+    "wer": 15.7,
+    "wer_Ирина": 15.0,
+    "wer_Милена": 10.3,
+    "wer_Ирина с шумом": 21.9,
+    "sec_median": 1.27,
+    "errors": 0
+   }
+  },
+  "speaking": {
+   "OpenAI gpt-4o-mini-tts · marin": {
+    "wer": 0.0,
+    "sec_median": 1.85,
+    "audio_seconds": 20.2,
+    "errors": 0,
+    "files": [
+     "results/voice/audio/tts-marin-0.mp3",
+     "results/voice/audio/tts-marin-1.mp3",
+     "results/voice/audio/tts-marin-2.mp3"
+    ]
+   },
+   "OpenAI gpt-4o-mini-tts · coral": {
+    "wer": 2.4,
+    "sec_median": 1.77,
+    "audio_seconds": 22.7,
+    "errors": 0,
+    "files": [
+     "results/voice/audio/tts-coral-0.mp3",
+     "results/voice/audio/tts-coral-1.mp3",
+     "results/voice/audio/tts-coral-2.mp3"
+    ]
+   },
+   "Gemini 3.8 Flash TTS · Kore": {
+    "wer": 0.0,
+    "sec_median": 5.67,
+    "audio_seconds": 16.8,
+    "errors": 0,
+    "files": [
+     "results/voice/audio/tts-gemini-3.8-flash-tts-Kore-0.wav",
+     "results/voice/audio/tts-gemini-3.8-flash-tts-Kore-1.wav",
+     "results/voice/audio/tts-gemini-3.8-flash-tts-Kore-2.wav"
+    ]
+   },
+   "Gemini 3.8 Flash TTS · Zephyr": {
+    "wer": 0.0,
+    "sec_median": 5.83,
+    "audio_seconds": 16.1,
+    "errors": 0,
+    "files": [
+     "results/voice/audio/tts-gemini-3.8-flash-tts-Zephyr-0.wav",
+     "results/voice/audio/tts-gemini-3.8-flash-tts-Zephyr-1.wav",
+     "results/voice/audio/tts-gemini-3.8-flash-tts-Zephyr-2.wav"
+    ]
+   },
+   "Gemini 3.8 Flash-Lite TTS · Kore": {
+    "wer": 8.3,
+    "sec_median": 5.67,
+    "audio_seconds": 16.3,
+    "errors": 0,
+    "files": [
+     "results/voice/audio/tts-gemini-3.8-flash-lite-tts-Kore-0.wav",
+     "results/voice/audio/tts-gemini-3.8-flash-lite-tts-Kore-1.wav",
+     "results/voice/audio/tts-gemini-3.8-flash-lite-tts-Kore-2.wav"
+    ]
+   },
+   "Дома: Ирина (Piper)": {
+    "wer": 8.9,
+    "sec_median": 0.98,
+    "audio_seconds": 17.5,
+    "errors": 0,
+    "files": [
+     "results/voice/audio/tts-irina-0.mp3",
+     "results/voice/audio/tts-irina-1.mp3",
+     "results/voice/audio/tts-irina-2.mp3"
+    ]
+   },
+   "Дома: Милена (macOS)": {
+    "wer": 4.2,
+    "sec_median": 0.72,
+    "audio_seconds": 15.6,
+    "errors": 0,
+    "files": [
+     "results/voice/audio/tts-milena-0.aiff",
+     "results/voice/audio/tts-milena-1.aiff",
+     "results/voice/audio/tts-milena-2.aiff"
+    ]
+   }
+  },
+  "gemini_usd": 0.02433
+ },
+ "monthly": {
+  "claude-fable-5-1": 77.93,
+  "claude-opus-5-5": 40.73,
+  "claude-sonnet-5-5": 24.95,
+  "claude-haiku-5-5": 1.46,
+  "gpt-6-astra": 121.9,
+  "gpt-6.1-sol": 20.68,
+  "gpt-6-luna": 2.52,
+  "gpt-5.4-mini": 12.51
+ },
+ "spent": {
+  "anthropic": 13.7982,
+  "openai": 12.108
+ }
+}
